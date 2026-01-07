@@ -109,8 +109,10 @@ func main() {
 			Location:          resourceGroup.Location,
 			
 			Properties: &keyvault.VaultPropertiesArgs{
-				TenantId: pulumi.String("TENANT_ID"), // Replace with actual tenant ID
-				Sku: &keyvault.SkuArgs{
+			// TODO: Set via Pulumi config: `pulumi config set azure-native:tenantId YOUR_TENANT_ID`
+			// Or get dynamically: pulumi.String(config.Get("tenantId"))
+			TenantId: pulumi.String("TENANT_ID"), // Replace with your Azure Tenant ID
+			Sku: &keyvault.SkuArgs{
 					Family: pulumi.String("A"),
 					Name:   keyvault.SkuNameStandard,
 				},
