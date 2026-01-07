@@ -1,0 +1,10 @@
+name: gke-microservices
+runtime: nodejs
+description: Production GKE cluster with Cloud SQL and Load Balancer
+
+config:
+  gcp:project:
+    description: GCP project ID
+  gcp:region:
+    description: GCP region
+    default: us-central1

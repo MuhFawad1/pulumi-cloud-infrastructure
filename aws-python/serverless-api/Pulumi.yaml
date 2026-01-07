@@ -1,0 +1,8 @@
+name: serverless-api
+runtime: python
+description: Production serverless REST API with Lambda, API Gateway, and DynamoDB
+
+config:
+  aws:region:
+    description: AWS region to deploy to
+    default: us-east-1

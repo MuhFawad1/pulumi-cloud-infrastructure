@@ -1,0 +1,19 @@
+{
+  "name": "gke-microservices",
+  "version": "1.0.0",
+  "description": "GKE microservices infrastructure with Pulumi",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^3.0.0",
+    "@pulumi/gcp": "^7.0.0",
+    "@pulumi/kubernetes": "^4.0.0"
+  }
+}

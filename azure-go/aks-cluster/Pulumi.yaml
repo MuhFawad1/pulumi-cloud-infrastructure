@@ -1,0 +1,8 @@
+name: aks-cluster
+runtime: go
+description: Production AKS cluster with Azure KeyVault and CosmosDB
+
+config:
+  azure-native:location:
+    description: Azure region
+    default: eastus
